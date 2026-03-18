@@ -1,0 +1,40 @@
+{
+  "name": "xcs221-mcp-server-template",
+  "version": "1.0.0",
+  "description": "Template MCP server for answering XCS221 course questions from static data.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddschilling/xcs221-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "xcs221",
+    "course",
+    "template"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toddschilling/xcs221-mcp/issues"
+  },
+  "homepage": "https://github.com/toddschilling/xcs221-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0"
+  }
+}
